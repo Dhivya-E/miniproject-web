@@ -1,0 +1,32 @@
+
+<div class="container my-5">
+
+    <div class="row">
+        <div class="col-4">
+            <img src={{products.image}}  width="100%" alt="">
+        </div>
+        <div class="col-8 ">
+            <div class="card ">
+                <div class="card-body">
+                    <h3 class="text-center display-4">{{products.name | uppercase}}</h3>
+                    <h4 class="text-center "> <span class="font-bold">PRICE : </span>₹{{products.price}} </h4>
+                    <div  class=" text-center">
+                        <p>RATING</p>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                    </div>
+                    <div *ngFor="let i of products.rating">
+                        
+                        <i class="fa-solid fa-star"></i>
+    
+                    </div>
+    <div class="text-center my-3">
+                <button class="btn btn-success">BUY NOW</button>
+                <span class="p-5"></span>
+                <button class="btn btn-warning">ADD TO CART</button>
+            </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    </div>

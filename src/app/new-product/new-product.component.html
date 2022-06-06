@@ -1,0 +1,49 @@
+<header>
+    <style>
+      body  {
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-literary-beauty-products-small-fresh-green-gradient-background-image_159167.jpg");
+            background-repeat: no-repeat,repeat;
+            background-size: cover; }
+    </style>
+</header>
+<body>
+<div class="container my-4" >
+    <div class="row mt-5">
+      <div class="col-md-6 offset-3">
+        <div class="card shadow ">
+          <div class="card-body " >
+            <h4 class="text-center  my-1 " ><i class="fa-solid fa-circle-plus fa-beat"></i>NEW PRODUCT</h4>
+        <form class="form " action="http://localhost:3000/products" method="post">
+  
+          <div class="form-group mb-1">
+              <label for="fname" class="form-label">Name</label>
+              <input type="text"class="form-control" id="fname" name="name">
+            </div>
+            
+            <div class="form-group mb-1" >
+              <label for="fimg" class="form-label">Image </label>  
+              <input type="text" class="form-control" id="fimg" name="image">
+            </div>
+            
+  
+            <div class="form-group mb-1">
+              <label for="fprice" class="form-label">Price</label>
+              <input type="number"class="form-control" id="fprice" name="price">
+            </div>
+            
+            <div class="form-group mb-1">
+              <label for="frating" class="form-label">Rating</label>
+              <input type="number" maxlength="5" minlength="1" class="form-control" id="frating" name="rating" >  
+            </div>
+            
+            <div class="text-center">
+            <button class="btn text-dark">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+  

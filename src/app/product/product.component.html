@@ -1,0 +1,31 @@
+<div class="container">
+    
+    <div class="row">
+      <div *ngFor="let p of products" class="col-md-4">
+          <div class="card ">
+            <img src={{p.image}} class="card-img-top" alt="" />
+            <div class="card-body">
+                <h5 class=" text-center">{{p.name | uppercase}}</h5>
+                <h6 class="text-center">PRICE :  ₹ {{p.price}}</h6>
+                <div  class=" text-center">
+                  <p >RATING</p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+                <div class="icons">
+                  <div>
+                <form action="http://localhost:3000/products/delete" method="post">
+                <input type="hidden" name="id" value={{p._id}}>
+              <button  class="btn btn-light" >  <i class="fa-solid fa-circle-minus"></i> </button>
+
+            </form>
+          </div>
+         
+          <div>
+            <button class=" btn btn-outline-light"><i class=" fa-regular fa-heart"></i>
+            </button>
+          </div>
+            </div>
+              </div>
+      </div>
+    </div>
+</div>
